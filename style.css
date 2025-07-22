@@ -1,0 +1,298 @@
+/* style.css - Custom styles for Burger Hut dark-themed header */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #f39c12 !important;
+}
+
+.nav-link {
+  color: #ccc !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f39c12 !important;
+}
+
+.navbar-toggler {
+  border-color: #f39c12;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f39c12' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28243, 156, 18, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('burger.jpg') center center/cover no-repeat;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-content .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+}
+/* Menu Highlights Styles */
+.menu-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.menu-card .card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-bottom: 2px solid #f39c12;
+}
+
+.menu-card .card-body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.menu-card .card-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-card .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+/* Special Deals Section Styles */
+
+#deals {
+  background-color: #111;
+  color: #fff;
+}
+
+.deal-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+}
+
+.deal-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #f39c12;
+}
+
+.deal-card .card-body {
+  padding: 1.25rem;
+}
+
+.deal-card .card-title {
+  color: #f39c12;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.deal-card .badge {
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+/* Why Burger Hut Section */
+#why {
+  background-color: #141414;
+}
+
+.why-card {
+  background-color: #1f1f1f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+}
+
+.why-card i {
+  color: #f39c12;
+}
+
+.why-card h5 {
+  color: #f39c12;
+}
+/* Customer Reviews Section */
+
+.review-card {
+  background-color: #1e1e1e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.4);
+}
+
+.review-card img {
+  border: 2px solid #f39c12;
+  object-fit: cover;
+}
+
+.review-card h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Restaurants / Vendors Section */
+
+.restaurant-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+}
+
+.restaurant-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #f39c12;
+}
+
+.restaurant-card .card-body {
+  background-color: #fff;
+  color: #000;
+}
+/* Order Now / CTA Section */
+#order {
+  background: linear-gradient(to right, #1e1e1e, #111);
+}
+
+#order .btn {
+  font-size: 1.25rem;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#order .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.4);
+}
+/* Order / Cart Section */
+.cart-card {
+  border-radius: 12px;
+  background-color: #1c1c1c;
+}
+
+.cart-card .list-group-item {
+  background-color: #1c1c1c;
+  color: #fff;
+  border-color: #444;
+}
+
+.cart-card .btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+  transition: all 0.3s ease;
+}
+/* About Us Section */
+
+#about img {
+  border: 3px solid #f39c12;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+#about h2 {
+  font-weight: 700;
+}
+
+#about p {
+  line-height: 1.7;
+}/* Contact Us Section */
+#contact .form-control::placeholder {
+  color: #bbb;
+}
+
+#contact .form-control:focus {
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+  border-color: #f39c12;
+}
+/* Login / Signup Form Styles */
+#login .form-control::placeholder {
+  color: #bbb;
+}
+
+#login .form-control:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+#login .card {
+  transition: transform 0.3s ease;
+}
+
+#login .card:hover {
+  transform: translateY(-4px);
+}
+/* Footer */
+footer i {
+  vertical-align: middle;
+}
+
+footer a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}

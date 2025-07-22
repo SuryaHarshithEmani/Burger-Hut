@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Hut</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white">
+
+<!-- Header / Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🍔 Burger Hut</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#deals">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"href= "#resturants">Resturants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content">
+      <h1 class="display-3 fw-bold text-warning">Big, Juicy, Legendary!</h1>
+      <p class="lead text-light">Get the best burgers in town, grilled to perfection.</p>
+      <div class="mt-4">
+        <a href="#menu" class="btn btn-warning btn-lg me-2">View Menu</a>
+        <a href="#order" class="btn btn-outline-light btn-lg">Order Now</a>
+      </div>
+    </div>
+  </header>
+  <!-- Menu Highlights Section -->
+  <section id="menu" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-warning mb-5">Our Signature Burgers</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-dark menu-card">
+            <img src="cheese burger.jpg" class="card-img-top" alt="cheese burger">
+            <div class="card-body">
+              <h5 class="card-title">Cheese Burger</h5>
+              <p class="card-text">A cheeseburger is a hamburger with one or more slices of melted cheese on top of the meat patty.
+              <span class="fw-bold text-danger">Rs 899.99</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-dark menu-card">
+            <img src="zinger burger.jpg" class="card-img-top" alt="zinger burger">
+            <div class="card-body">
+              <h5 class="card-title">Zinger Burger</h5>
+              <p class="card-text">includes a toasted brioche bun, lettuce, mayonnaise, and the spicy chicken fillet.</p>
+              <span class="fw-bold text-danger">Rs 699.49</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-dark menu-card">
+            <img src="chicken burger.jpg" class="card-img-top" alt="Spicy Jalapeño Burger">
+            <div class="card-body">
+              <h5 class="card-title">Spicy smoky BBQ chicken burger</h5>
+              <p class="card-text">Grilled chicken breast glazed with smoky BBQ sauce, topped with lettuce, tomato, and creamy mayo on a warm brioche bun .</p>
+              <span class="fw-bold text-danger">Rs 799.79</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<section id="deals" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-warning text-center mb-5">🔥 Special Deals</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card deal-card h-100 text-dark bg-light">
+          <img src="deal2.jpg" class="card-img-top" alt="Family Combo">
+          <div class="card-body">
+            <h5 class="card-title">Family Combo</h5>
+            <p class="card-text">4 burgers, 4 fries, 4 drinks — all for just $29.99!</p>
+            <span class="badge bg-danger fs-5">Save 20%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card deal-card h-100 text-dark bg-light">
+          <img src="deal1.jpg" class="card-img-top" alt="Lunch Special" width="50">
+          <div class="card-body">
+            <h5 class="card-title">Lunch Special</h5>
+            <p class="card-text">Any burger + drink combo for $8.99 — weekdays only!</p>
+            <span class="badge bg-danger fs-5">Limited Time</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card deal-card h-100 text-dark bg-light">
+          <img src="deal3.jpg" class="card-img-top" alt="Student Deal">
+          <div class="card-body">
+            <h5 class="card-title">Student Deal</h5>
+            <p class="card-text">Get 15% off your order with student ID.</p>
+            <span class="badge bg-danger fs-5">Save Now</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Why Burger Hut Section -->
+<section id="why" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center text-warning mb-4">Why Choose Burger Hut?</h2>
+    <p class="text-center mb-5 text-light">We bring you the best burgers with unbeatable quality, taste, and value.</p>
+    
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <div class="why-card p-4 h-100 border border-secondary rounded">
+          <i class="bi bi-award fs-1 text-warning mb-3"></i>
+          <h5 class="fw-bold">Premium Ingredients</h5>
+          <p class="text-light">We use fresh, halal, and high-quality ingredients in every bite.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="why-card p-4 h-100 border border-secondary rounded">
+          <i class="bi bi-lightning-charge fs-1 text-warning mb-3"></i>
+          <h5 class="fw-bold">Fast Delivery</h5>
+          <p class="text-light">Hot and fresh food delivered to your door in minutes.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="why-card p-4 h-100 border border-secondary rounded">
+          <i class="bi bi-emoji-smile fs-1 text-warning mb-3"></i>
+          <h5 class="fw-bold">Customer Satisfaction</h5>
+          <p class="text-light">We care about your experience and guarantee your satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Customer Reviews Section -->
+<section id="reviews" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-center text-warning mb-4">Customer Reviews</h2>
+    <p class="text-center mb-5 text-light">What our satisfied customers are saying!</p>
+
+    <div class="row g-4">
+      <!-- Review 1 -->
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 border border-secondary rounded text-center bg-dark">
+          <img src="images/user1.jpg" alt="User 1" class="rounded-circle mb-3" width="80" height="80">
+          <h5 class="text-warning">Saketh </h5>
+          <p class="text-light fst-italic">“Best burger I’ve ever had! Tasty, juicy, and always fresh.”</p>
+          <div class="text-warning">
+            ★★★★★
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 border border-secondary rounded text-center bg-dark">
+          <img src="images/user2.jpg" alt="User 2" class="rounded-circle mb-3" width="80" height="80">
+          <h5 class="text-warning">Surya .</h5>
+          <p class="text-light fst-italic">“Fast delivery and great service. My go-to spot for lunch.”</p>
+          <div class="text-warning">
+            ★★★★☆
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="col-md-4">
+        <div class="review-card p-4 h-100 border border-secondary rounded text-center bg-dark">
+          <img src="images/user3.jpg" alt="User 3" class="rounded-circle mb-3" width="80" height="80">
+          <h5 class="text-warning">Harshit </h5>
+          <p class="text-light fst-italic">“So glad it's halal! Flavor is amazing and portions are generous.”</p>
+          <div class="text-warning">
+            ★★★★★
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurants / Vendors Section -->
+<section id="resturants" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-warning text-center mb-5">🍔Our partner Restaurants</h2>
+    <div class="row g-4">
+
+      <!-- Restaurant Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card restaurant-card h-100 text-dark">
+          <img src="bbq.jpg" class="card-img-top" alt="Kabul Bite">
+          <div class="card-body">
+            <h5 class="card-title">Kabul Bites</h5>
+            <p class="card-text">Home of flame-grilled burgers and premium sandwiches.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card restaurant-card h-100 text-dark">
+          <img src="zinger.jpg" class="card-img-top" alt="Zinger Zone">
+          <div class="card-body">
+            <h5 class="card-title">Zinger Zone</h5>
+            <p class="card-text">Famous for zinger burgers and crispy chicken meals.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card restaurant-card h-100 text-dark">
+          <img src="arg.jpg" class="card-img-top" alt="Arg Herat">
+          <div class="card-body">
+            <h5 class="card-title">Arg Herat</h5>
+            <p class="card-text">Deluxe beef burgers, cheese melts, and more.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Order Now / CTA Section -->
+<section id="order" class="py-5 bg-dark text-white text-center">
+  <div class="container">
+    <h2 class="text-warning mb-3">Ready to Taste the Best?</h2>
+    <p class="mb-4 fs-5">Order your favorite burgers now and enjoy fresh, natural flavors delivered fast!</p>
+    <a href="#menu" class="btn btn-warning btn-lg px-5 py-3 fw-bold">Order Now</a>
+  </div>
+</section>
+<!-- Order / Cart With Inputs -->
+<section id="cart" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-center text-warning mb-5">🛒 Customize Your Order</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form class="card cart-card p-4 bg-dark border border-secondary">
+
+          <div class="mb-3">
+            <label class="form-label text-white">Cheese Burger</label>
+            <input type="number" class="form-control bg-dark text-white border-secondary" placeholder="Qty" min="1" value="2">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-white">Zinger Burger</label>
+            <input type="number" class="form-control bg-dark text-white border-secondary" placeholder="Qty" min="1" value="1">
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-white">Spicy smokey BBQ Burger</label>
+            <input type="number" class="form-control bg-dark text-white border-secondary" placeholder="Qty" min="1" value="1">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label text-white">Note to kitchen (optional)</label>
+            <textarea class="form-control bg-dark text-white border-secondary" rows="3" placeholder="No onions, extra sauce..."></textarea>
+          </div>
+
+          <div class="text-warning fw-bold fs-5 text-center mt-4">
+            Total: Rs 27.97
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-warning fw-bold px-4 py-2" type="submit">Place Order</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Us Section -->
+<section id="about us" class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="about.jpg" alt="About Burger Hut" class="img-fluid rounded shadow">
+      </div>
+      
+      <!-- Text -->
+      <div class="col-lg-6">
+        <h2 class="text-warning mb-3">About Burger Hut</h2>
+        <p class="text-light fs-5">
+          Burger Hut is more than just a burger joint — it’s a passion for flavor, quality, and comfort food. 
+          Our mission is to bring delicious, freshly made meals to your table using 100% natural ingredients and locally sourced products.
+        </p>
+        <p class="text-light">
+          Whether you’re craving acheese burger or a spicy chicken zinger, we’ve got the perfect bite for you. We care about taste, speed, and your satisfaction. That’s the Burger Hut promise.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Us Section -->
+<section id="contact" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-center text-warning mb-4">📞 Contact Us</h2>
+    <p class="text-center mb-5 text-light">Have questions or feedback? We'd love to hear from you!</p>
+
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6 mb-4">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-light">Name</label>
+            <input type="text" class="form-control bg-dark text-white border-secondary" id="name" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-light">Email</label>
+            <input type="email" class="form-control bg-dark text-white border-secondary" id="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-light">Message</label>
+            <textarea class="form-control bg-dark text-white border-secondary" id="message" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning px-4 fw-bold">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class="bg-dark border border-secondary p-4 rounded h-100">
+          <h5 class="text-warning">Burger Hut</h5>
+          <p class="text-light mb-2"><i class="bi bi-geo-alt-fill"></i> 123 Burger Street, Andhra Pradesh, India</p>
+          <p class="text-light mb-2"><i class="bi bi-telephone-fill"></i> +93 7981945612</p>
+          <p class="text-light mb-2"><i class="bi bi-envelope-fill"></i> suryaharshith1902@gmail.com</p>
+          <div class="mt-4">
+            <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-warning"><i class="bi bi-twitter fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Login / Signup Section -->
+<section id="login" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center text-warning mb-5">👤 Login / Sign Up</h2>
+    <div class="row justify-content-center g-4">
+
+      <!-- Login Form -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card bg-black border border-secondary p-4">
+          <h4 class="text-warning mb-3">Login</h4>
+          <form>
+            <div class="mb-3">
+              <label class="form-label text-light">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="you@example.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-light">Password</label>
+              <input type="password" class="form-control bg-dark text-white border-secondary" placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-warning w-100 fw-bold">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card bg-black border border-secondary p-4">
+          <h4 class="text-warning mb-3">Sign Up</h4>
+          <form>
+            <div class="mb-3">
+              <label class="form-label text-light">Full Name</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-light">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="you@example.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-light">Password</label>
+              <input type="password" class="form-control bg-dark text-white border-secondary" placeholder="Create password">
+            </div>
+            <button type="submit" class="btn btn-warning w-100 fw-bold">Create Account</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-black text-white py-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+
+      <!-- Branding -->
+      <div class="col-md-6 mb-3">
+        <h5 class="text-warning">🍔 Burger Hut</h5>
+        <p class="text-light">Serving goodness with passion and flavor. Taste the best, feel the rest!</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-3">
+        <h6 class="text-warning">Contact</h6>
+        <p class="text-light mb-1"><i class="bi bi-envelope-fill"></i> suryaharshith1902@gmail.com</p>
+        <p class="text-light mb-1"><i class="bi bi-telephone-fill"></i> +91 7981945612</p>
+        <p class="text-light"><i class="bi bi-geo-alt-fill"></i> Andhra Pradesh,India</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-3 mb-3">
+        <h6 class="text-warning">Follow Us</h6>
+        <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="#" class="text-warning"><i class="bi bi-twitter fs-5"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-secondary mt-4">
+    <p class="text-center text-secondary mb-0">&copy; 2025 Burger Hut. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
